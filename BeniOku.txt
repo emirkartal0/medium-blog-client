@@ -1,0 +1,26 @@
+Projeyi başlatmak için izlenmesi gereken adımlar:
+// node modules içerisindeki gerekli bağımlılıkları kurmak için:
+npm install
+// projeyi başlatmak için:
+ng serve
+// veya projeyi build ettikten sonra başlatması için
+ng serve --open
+
+Verilen vize projesinde bir blog sitesi yapılası isteniyordu. Bir yazılımcı olarak günlük hayatta sıkça kullandığımız Medium sitesinin clone projesini yapmak istedim.
+Medium sitesi tasarım olarak minimal göz yormayan bir tasarıma sahip. Projenin şu aşamasında isterler arasında bir backend (api) gibi bir ister bulunmadığı için siteyi sonrasında dinamik hale getirecek şekilde array kullanarak elemanları döndürdüm.
+
+Proje içerisinde kullandığım teknolojiler:
+Angular (js framework)
+Tailwind (css framework)
+
+Tailwind için burada bir parantez açamam gerekirse; tailwind bir utility-first css frameworküdür yani daha hızlı css yazmamız için bize hazır css class'larını getirmektedir.
+Tailwind bir UI-Kit değildir. Bizim daha hızlı css yazarak özgün tasarımlar ortaya koymamızı sağlar. Çünkü içerisinde herhangi bir hazır component bulunmamaktadır. 
+Bütün ayrıntılara tek tek işleyebildiğimiz çevik bir yapı sunar.
+
+Bende projemde css daha hızlı yazabilmek ve style işlemlerinde istediğim gibi davranabilmek için tailwind tercih ettim.
+
+Projeyi temelde navbar ve body olarak ikiye ayırdıktan sonra Body componenti içerisinde articles ve recommendation olarak iki componente böldüm.
+
+icon paketi olarak:
+https://ng-icons.github.io/ng-icons/#/
+ng-icons kullandım, bu sitede çeşitli icon kütüphanelerini angular için npm paketi yapılmış. CSS ile istediğim gibi renk boyut değişimi yapıldığı için svg yerine bu iconları tercih ettim.
