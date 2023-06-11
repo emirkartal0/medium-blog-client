@@ -8,10 +8,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ArticlesComponent implements OnInit {
 
+  articles: Array<any> = [];
+
   constructor(
     private http: HttpClient
   ) {}
-  articles: Array<any> = [];
+
   ngOnInit(): void {
     this.http.get<any>('https://localhost:7118/api/Article/getArticles').subscribe(data => {
         console.log(data)

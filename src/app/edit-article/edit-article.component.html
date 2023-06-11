@@ -2,27 +2,29 @@
     <form #newArticleForm="ngForm" (ngSubmit)="newArticle(newArticleForm.value)" class="flex flex-col w-full justify-start">
         <div class="flex items-center  pb-4">
             <span class="text-2xl font-serif px-7">Title:</span>
-            <input  ngModel name="Title" type="text"
+            <input  ngModel name="title" type="text"
                 class="border-b w-full outline-none text-left pl-1 font-serif"
             >
         </div>
         <div class="flex items-center  pb-4">
             <span class="text-2xl font-serif px-2">Content:</span>
-            <textarea ngModel name="Content" class="border w-full outline-none text-left p-4 font-serif" cols="30" rows="10"></textarea>
+            <textarea ngModel name="content" class="border w-full outline-none text-left p-4 font-serif" cols="30" rows="10"></textarea>
         </div>
 
         <div class="relative flex w-full pb-4">
             <span class="text-2xl font-serif px-2">Tags:</span>
             <select
                 ngModel
-                name="Label"
-                class="block p-3 overflow-hidden rounded-sm cursor-pointer outline-none"
+                name="labelIds"
+                class="block p-3 overflow-y-scroll rounded-sm cursor-pointer outline-none"
                 multiple 
                 >
-                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="1">super admin</option>
-                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="2">admin</option>
-                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="3">writer</option>
-                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="4">user</option>
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="1">electron</option>
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="2">angular</option>
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="3">react</option>
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="4">tailwind</option>
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="5">vue</option>
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="6">nodejs</option>
             </select>
         </div>
 
