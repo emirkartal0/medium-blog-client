@@ -21,6 +21,7 @@ import { ArticleComponent } from './article/article.component';
 import { EditArticleComponent } from './edit-article/edit-article.component';
 import { LoginComponent } from './navbar/login/login.component';
 import { RegisterComponent } from './navbar/register/register.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { RegisterComponent } from './navbar/register/register.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     NgIconsModule.withIcons({ heroPencilSquare, heroBell, heroPlus, heroMinusSmall, heroBookmark, heroMinusCircle, heroEllipsisHorizontal }),
   ],

@@ -1,8 +1,8 @@
 <div class="flex justify-between p-2">
     <div class="flex items-center gap-4 ml-2">
-        <img class="w-60"  src="/assets/mediumLogo.png" alt="logo">
+        <img class="w-60 cursor-pointer" routerLink="/home" src="/assets/mediumLogo.png" alt="logo">
 
-        <div class="pt-2 relative mx-auto text-gray-600">
+        <div routerLink="home/edit" class="pt-2 relative mx-auto text-gray-600">
             <input class="bg-gray-100 h-10 pl-10 px-5 rounded-full text-sm focus:outline-none" type="search"
             name="search" placeholder="Search Medium">
             <button type="submit" class="absolute left-0 top-0 mt-5 ml-4">
@@ -19,9 +19,9 @@
     </div>
     <div class="flex items-center gap-8 pr-5">
 
-        <div class="flex items-center gap-2 rounded-lg hover:bg-slate-100 px-2 py-1 cursor-pointer">
+        <div routerLink="/home/edit" class="flex items-center gap-2 rounded-lg hover:bg-slate-100 px-2 py-1 cursor-pointer">
             <ng-icon class="text-3xl text-slate-700/70 text cursor-pointer" name="heroPencilSquare"></ng-icon>
-            <a routerLink="/home/edit" class="text-slate-700/70">Write</a>
+            <a class="text-slate-700/70">Write</a>
         </div>
 
         <div class="flex items-center gap-2">
