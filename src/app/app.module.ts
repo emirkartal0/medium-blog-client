@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,7 +23,7 @@ import { ArticleComponent } from './article/article.component';
 import { EditArticleComponent } from './edit-article/edit-article.component';
 import { LoginComponent } from './navbar/login/login.component';
 import { RegisterComponent } from './navbar/register/register.component';
-import { FormsModule } from '@angular/forms';
+import { HumanReadableTimePipe } from './pipes/human-readable-time.pipe';
 
 
 @NgModule({
@@ -35,10 +37,12 @@ import { FormsModule } from '@angular/forms';
     EditArticleComponent,
     LoginComponent,
     RegisterComponent,
+    HumanReadableTimePipe,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule,
     NgIconsModule.withIcons({ heroPencilSquare, heroBell, heroPlus, heroMinusSmall, heroBookmark, heroMinusCircle, heroEllipsisHorizontal }),
   ],
