@@ -17,6 +17,8 @@ import { heroMinusSmall } from '@ng-icons/heroicons/outline';
 import { heroBookmark } from '@ng-icons/heroicons/outline';
 import { heroMinusCircle } from '@ng-icons/heroicons/outline';
 import { heroEllipsisHorizontal } from '@ng-icons/heroicons/outline';
+import { ArticleComponent } from './article/article.component';
+import { EditArticleComponent } from './edit-article/edit-article.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { heroEllipsisHorizontal } from '@ng-icons/heroicons/outline';
     NavbarComponent,
     BodyComponent,
     ArticlesComponent,
-    RecommendationComponent
+    RecommendationComponent,
+    ArticleComponent,
+    EditArticleComponent
   ],
   imports: [
     BrowserModule,
