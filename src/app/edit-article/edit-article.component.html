@@ -1,1 +1,33 @@
-<p>editleme sayfasi</p>
+<div class="flex items-center justify-center w-[70%] pl-60 pt-10">
+    <form #newArticleForm="ngForm" (ngSubmit)="newArticle(newArticleForm.value)" class="flex flex-col w-full justify-start">
+        <div class="flex items-center  pb-4">
+            <span class="text-2xl font-serif px-7">Title:</span>
+            <input  ngModel name="Title" type="text"
+                class="border-b w-full outline-none text-left pl-1 font-serif"
+            >
+        </div>
+        <div class="flex items-center  pb-4">
+            <span class="text-2xl font-serif px-2">Content:</span>
+            <textarea ngModel name="Content" class="border w-full outline-none text-left p-4 font-serif" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="relative flex w-full pb-4">
+            <span class="text-2xl font-serif px-2">Tags:</span>
+            <select
+                ngModel
+                name="Label"
+                class="block p-3 overflow-hidden rounded-sm cursor-pointer outline-none"
+                multiple 
+                >
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="1">super admin</option>
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="2">admin</option>
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="3">writer</option>
+                <option class="rounded-lg px-2 py-1 checked:bg-gray-200" value="4">user</option>
+            </select>
+        </div>
+
+        <div class="flex justify-center w-full pt-10">
+            <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-full w-[30%] font-serif text-white" type="submit">Publish</button>
+        </div>
+    </form>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-edit-article',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./edit-article.component.css']
 })
 export class EditArticleComponent {
+
+  newArticle(data: NgForm) {
+    console.log(data);
+  }
 
 }
