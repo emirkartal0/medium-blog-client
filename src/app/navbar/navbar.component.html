@@ -30,11 +30,11 @@
 
         <div class="flex items-center gap-4">
             <div class="text-center text-sm font-light cursor-pointer">
-                <span class="bg-green-600 hover:bg-green-700 text-white px-4 py-2  rounded-full ">Sign up</span>
+                <span routerLink="/home/register" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2  rounded-full ">Sign up</span>
             </div>
             
             <div class="flex items-center gap-2 rounded-lg text-sm font-light cursor-pointer">
-                <a class="text-slate-700/70 hover:text-slate-800">Sign In</a>
+                <a routerLink="/home/login" class="text-slate-700/70 hover:text-slate-800">Sign In</a>
             </div>
         </div>
 
@@ -47,7 +47,5 @@
 </div>
 
 <hr>
-
-<app-auth></app-auth>
 
 <router-outlet></router-outlet>
