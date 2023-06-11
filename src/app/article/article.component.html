@@ -1,2 +1,27 @@
-<p>article works!</p>
-asdas
+<div class="flex justify-center">
+    <div class="flex flex-col py-5 mt-2 w-[70%]" >
+    <div class="w-full flex items-center justify-center">
+        <img class="w-fit h-fit rounded" [src]="article.ImageUrl" alt="articlePicture">
+    </div>
+        <div class="flex items-center gap-2 py-7">
+            <img class="w-8 rounded-full"  src="/assets/userPic.png" alt="userPicture">
+            <strong class="font-serif font-thin text-slate-800">{{article.Owner}}</strong>
+            <ng-icon class="text-2xl text-gray-400 " name="heroMinusSmall"></ng-icon>
+            <div class="text-slate-600">{{article.CreatedTime}}</div>
+        </div>
+        
+        <div class="flex flex-row">
+            <div class="flex flex-col p-1" >
+                <h1 class="py-2 font-semibold text-2xl">{{article.Title}}</h1>
+                <p class="font-sans font-light">{{article.Content}}</p>
+                
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-2 items-center justify-center py-4 mt-2">
+                        <div class="flex justify-center bg-gray-200 px-2 py-1 rounded-full text-xs" >{{article.Label}}</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
