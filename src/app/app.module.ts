@@ -19,6 +19,7 @@ import { heroMinusCircle } from '@ng-icons/heroicons/outline';
 import { heroEllipsisHorizontal } from '@ng-icons/heroicons/outline';
 import { ArticleComponent } from './article/article.component';
 import { EditArticleComponent } from './edit-article/edit-article.component';
+import { AuthComponent } from './navbar/auth/auth.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { EditArticleComponent } from './edit-article/edit-article.component';
     ArticlesComponent,
     RecommendationComponent,
     ArticleComponent,
-    EditArticleComponent
+    EditArticleComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,

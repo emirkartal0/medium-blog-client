@@ -20,16 +20,26 @@
     <div class="flex items-center gap-8 pr-5">
 
         <div class="flex items-center gap-2 rounded-lg hover:bg-slate-100 px-2 py-1 cursor-pointer">
-            <ng-icon class="text-3xl text-slate-700/70 cursor-pointer" name="heroPencilSquare"></ng-icon>
-            <span class="text-slate-700/70">Write</span>
+            <ng-icon class="text-3xl text-slate-700/70 text cursor-pointer" name="heroPencilSquare"></ng-icon>
+            <a routerLink="/home/edit" class="text-slate-700/70">Write</a>
         </div>
 
         <div class="flex items-center gap-2">
             <ng-icon class="text-3xl text-slate-700/70 hover:text-black cursor-pointer" name="heroBell"></ng-icon>
         </div>
 
+        <div class="flex items-center gap-4">
+            <div class="text-center text-sm font-light cursor-pointer">
+                <span class="bg-green-600 hover:bg-green-700 text-white px-4 py-2  rounded-full ">Sign up</span>
+            </div>
+            
+            <div class="flex items-center gap-2 rounded-lg text-sm font-light cursor-pointer">
+                <a class="text-slate-700/70 hover:text-slate-800">Sign In</a>
+            </div>
+        </div>
+
         <div class="flex gap-1 items-center">
-            <img class="w-11 rounded-full"  src="/assets/userPic.png" alt="userPicture">
+            <img class="w-11 rounded-full"  [src]=" '/assets/userPic.png' || '' " alt="userPicture">
             <span class="-rotate-90 text-xs text-slate-700/70 hover:text-black cursor-pointer"> < </span>
         </div>
 
@@ -37,5 +47,7 @@
 </div>
 
 <hr>
+
+<app-auth></app-auth>
 
 <router-outlet></router-outlet>
